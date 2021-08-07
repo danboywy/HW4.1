@@ -1,0 +1,118 @@
+<!--
+    Haojie Zheng
+    Haojie_zheng@student.uml.edu
+    07/31/2021
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiplication Table</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+</head>
+<body>
+<!-- page content -->
+
+<!--First number-->
+<div class="container">
+    <div class="row">
+        <div class="mx-auto" style="font-size:larger; width: auto;">
+            <div class="head">
+                <h1>Multiplication Table</h1>
+                <h2>Enter numbers between -50 to 50.</h2>
+            </div>
+        </div>
+    </div>
+    <!--user input-->
+    <form id="Form">
+        <div class="row" style="background-color:aquamarine;"> 
+            <div class="col-12 col-md-3">
+                <div class="firstnumber">
+                    <h1>Minimum Row Value</h1>
+                    <input id="fn" name ="firstnumber" type="text"> 
+                    <div id="slider-row-min"></div>   
+                </div>
+            </div>    
+            <!--First end number-->
+            <div class="col-12 col-md-3">   
+                <div class="endnumber1">
+                    <h1>Maximum Row Value</h1>
+                    <input id="en1" name ="endnumber1" type="text">
+                    <div id="slider-row-max"></div>  
+                </div>
+            </div>
+            <!--Second number-->
+            <div class="col-12 col-md-3">   
+                <div class="secoundnumber">
+                    <h1>Minimum Column Value</h1>
+                    <input id="sn" name ="secoundnumber" type="text">
+                    <div id="slider-col-min"></div>
+                </div>
+            </div>
+            <!--Second end number-->
+            <div class="col-12 col-md-3">
+                <div class="endnumber2">
+                    <h1>Maximum Column Value</h1>
+                    <input id="en2" name ="endnumber2" type="text">
+                    <div id="slider-col-max"></div>  
+                </div>   
+            </div>
+        </div>
+    </form>     
+
+</div>
+
+<!--Button to check input and create table-->  
+<div class="container">    
+     <div class="row" style="margin-top: 1em;">   
+        <div class="col-12 col-md-6">
+            <input id="button" type="button" value="Submit" data-loading-text="Loading..." class="col-12 btn btn-primary">   
+        </div>
+        <div class="col-12 mt-1 col-md-6 mt-md-0">
+            <input id="save" type="button" value="Save" data-loading-text="Loading..." class="col-12 btn btn-primary">
+        </div>
+    </div>     
+</div>  
+
+<!--Create tabs-->
+<div class="container">    
+    <div class="row">
+        
+            <div id="tabs">
+                <ul>
+                    <!--Current table-->
+                    <li><a href="#Table">Current</a></li>
+                </ul>
+                <!--Create table-->
+                <div id="Table"></div>
+            </div>
+        
+    </div>
+</div>
+
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="HW4.js"></script>
+
+<!--W3-->
+<div class="w3">
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/*
+  Haojie Zheng
+  Haojie_zheng@student.uml.edu
+  07/31/2021
+*/
+.head{
+  background-color: turquoise;
+  margin: auto;
+}
+.head h1{
+  font-size: 30px;
+}
+h2{
+  font-size: large;
+}
+h1{
+  text-align: center;
+  font-size:large;
+  margin-top: 20px; ;
+}
+input{
+  width: 100%;
+}
+th{
+  width: 2em;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+td{
+  width: 2em;
+  background-color: white;
+  border: 1px solid black;
+}
+
+body{
+  background-color: blanchedalmond;
+  
+}
+table{
+  
+  text-align: center;
+  margin: auto;
+}
+#Table{
+  margin-top: 20px;
+  height:100%;
+  overflow:auto;
+}
+
+/*clean first row of first col*/
+tr:first-child > th:first-child{
+  background-color: transparent;
+  border: transparent;
+}
+
+.w3{
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+
+}
+
+
+label.error{
+  color:red;
+}
+input.error  {   
+  color: red; 
+  border: dashed 1px red;       
+} 
+
+#custom-handle {
+  background-color: white;
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+#tabs{
+  height:100%;
+  overflow:auto;
+}
