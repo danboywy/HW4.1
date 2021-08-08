@@ -1,6 +1,6 @@
 //Haojie Zheng
 //Haojie_zheng@student.uml.edu
-//07/31/2021
+//08/09/2021
 
 //Create method to test input
 
@@ -236,11 +236,23 @@ $( function() {
       $("#tabs").tabs("refresh");
     }
     });
-
-    //Remove function
+  });
+    //individual tabs can be deleted
     $( "#tabs" ).tabs().on( "click", "span.ui-icon-close", function() {
       var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
       $( "#" + panelId ).remove();
       $("#tabs").tabs("refresh");
     });
+
+    //multiple tabs can be deleted simultaneously
+    $("#removeall").click(function() {
+      $( "li" ).each(function( index ) {
+        if (index != 0)
+          $( this ).remove();
+          $("div").filter(function () {
+            return this.id.match(/tab\d+/);
+          }).remove();
+          $("#tabs").tabs("refresh");         
+      });
+ 
 })
